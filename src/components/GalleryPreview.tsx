@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { ArrowRight, Images } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Images } from "lucide-react";
 
 const galleryImages = [
   {
@@ -13,6 +11,11 @@ const galleryImages = [
     title: "Training Workshop",
     titleBn: "প্রশিক্ষণ কর্মশালা",
     image: "/images/2.jpeg",
+  },
+  {
+    title: "Training Workshop",
+    titleBn: "প্রশিক্ষণ কর্মশালা",
+    image: "/images/3.jpeg",
   },
 ];
 
@@ -32,11 +35,11 @@ const GalleryPreview = () => {
               <p className="text-sm text-muted-foreground">{t("Moments from our journey", "আমাদের যাত্রার মুহূর্তগুলো")}</p>
             </div>
           </div>
-          <Link to="/gallery">
+          {/* <Link to="/gallery">
             <Button variant="ghost" className="text-primary">
               {t("View All", "সকল দেখুন")} <ArrowRight className="h-4 w-4 ml-1" />
             </Button>
-          </Link>
+          </Link> */}
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
