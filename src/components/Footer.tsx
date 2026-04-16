@@ -21,7 +21,7 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/images/doa-logo.png" alt="DOA" className="h-12 w-12 bg-card/20 rounded-full p-1" />
+              <img src="/doa-logo.png" alt="DOA" className="h-12 w-12 bg-card/20 rounded-full p-1" />
               <div>
                 <h3 className="font-heading font-bold text-lg">DOA</h3>
                 <p className="text-sm opacity-80">{t("Est. 2019", "প্রতিষ্ঠিত ২০১৯")}</p>

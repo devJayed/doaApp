@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Bell, Globe, LogIn, Menu, X } from "lucide-react";
+import { Globe, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" aria-label={t("Go to homepage", "হোমপেজে যান")}>
-            <img src="/images/doa-logo.png" alt="DOA Logo" className="h-12 w-12 md:h-14 md:w-14" />
+            <img src="/doa-logo.png" alt="DOA Logo" className="h-12 w-12 md:h-14 md:w-14" />
             <div className="hidden sm:block">
               <h1 className="text-sm md:text-base font-bold text-foreground leading-tight">
                 {t("Department of ICT Officers Association", "আইসিটি অধিদপ্তর অফিসার্স এসোসিয়েশন (ডিওএ)")}
@@ -67,14 +67,14 @@ const Navbar = () => {
               {language === "en" ? "বাংলা" : "EN"}
             </Button>
 
-            <Button variant="ghost" size="icon" className="relative" aria-label={t("Notifications", "বিজ্ঞপ্তি")}>
+            {/* <Button variant="ghost" size="icon" className="relative" aria-label={t("Notifications", "বিজ্ঞপ্তি")}>
               <Bell className="h-5 w-5" />
               <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-secondary text-secondary-foreground text-[10px] flex items-center justify-center font-bold" aria-label="3 notifications">3</span>
-            </Button>
-            <Button className="gradient-primary text-primary-foreground">
+            </Button> */}
+            {/* <Button className="gradient-primary text-primary-foreground">
               <LogIn className="h-4 w-4 mr-2" />
               {t("Login", "লগইন")}
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile toggle */}
@@ -118,12 +118,12 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <div className="mt-3 px-4">
+            {/* <div className="mt-3 px-4">
               <Button className="w-full gradient-primary text-primary-foreground">
                 <LogIn className="h-4 w-4 mr-2" />
                 {t("Login", "লগইন")}
               </Button>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
