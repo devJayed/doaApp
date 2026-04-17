@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Calendar, Clock, MapPin, Users } from "lucide-react";
+import { Calendar, MapPin, Users } from "lucide-react";
 
 const events = [
   { title: "Meeting to form an ad hoc committee of DOA.", titleBn: "ডিওএ-এর অ্যাড হক কমিটি গঠন সংক্রান্ত সভা", date: "April 4, 2026", dateBn: "৪ এপ্রিল, ২০২৬",  location: "ZOOM", locationBn: "জুম ", color: "gradient-primary", status: "Open", statusBn: "খোলা" },
@@ -41,10 +41,7 @@ const Events = () => {
                   <Calendar className="h-4 w-4 text-primary" aria-hidden="true" />
                   {t(event.date, event.dateBn)}
                 </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Clock className="h-4 w-4 text-primary" aria-hidden="true" />
-                  {t(event.time, event.timeBn)}
-                </div>
+                
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4 text-primary" aria-hidden="true" />
                   {t(event.location, event.locationBn)}
