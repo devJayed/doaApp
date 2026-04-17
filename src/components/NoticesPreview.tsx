@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { ArrowRight, Clock, FileText, Tag } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Clock, FileText, Tag } from "lucide-react";
 
 const notices = [
   { title: "Regarding the transfer of responsibilities of the DOA.", titleBn: "ডিওএ-এর দায়িত্ব হস্তান্তর সংক্রান্ত", date: "April 12, 2026", dateBn: "১২ এপ্রিল ২০২৬", category: "Circular", categoryBn: "সার্কুলার", urgent: true, hasPdf: true },
@@ -25,11 +23,11 @@ const NoticesPreview = () => {
           </div>
           <h3 className="text-2xl font-heading font-bold text-foreground">{t("Latest Notices", "সর্বশেষ নোটিশ")}</h3>
         </div>
-        <Link to="/notices">
+        {/* <Link to="/notices">
           <Button variant="ghost" size="sm" className="text-primary">
             {t("View All", "সকল দেখুন")} <ArrowRight className="h-4 w-4 ml-1" />
           </Button>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="space-y-3">

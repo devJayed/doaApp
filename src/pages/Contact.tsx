@@ -1,10 +1,10 @@
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 
 const Contact = () => {
   const { t } = useLanguage();

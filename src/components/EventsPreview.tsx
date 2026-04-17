@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { ArrowRight, Calendar, MapPin } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Calendar, MapPin } from "lucide-react";
 
 const events = [
   { title: "Meeting to form an ad hoc committee of DOA.", titleBn: "ডিওএ-এর অ্যাড হক কমিটি গঠন সংক্রান্ত সভা", date: "April 4, 2026", dateBn: "৪ এপ্রিল, ২০২৬",  location: "ZOOM", locationBn: "জুম ", color: "gradient-primary", status: "Open", statusBn: "খোলা" },
@@ -23,11 +21,11 @@ const EventsPreview = () => {
           </div>
           <h3 className="text-2xl font-heading font-bold text-foreground">{t("Events", "ইভেন্ট")}</h3>
         </div>
-        <Link to="/events">
+        {/* <Link to="/events">
           <Button variant="ghost" size="sm" className="text-accent">
             {t("View All", "সকল দেখুন")} <ArrowRight className="h-4 w-4 ml-1" />
           </Button>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="space-y-3">

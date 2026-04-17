@@ -3,18 +3,18 @@ import { Images } from "lucide-react";
 
 const galleryImages = [
   {
-    title: "Annual Conference 2025",
-    titleBn: "বার্ষিক সম্মেলন ২০২৫",
+    title: "",
+    titleBn: "",
     image: "/images/1.jpeg",
   },
   {
-    title: "Training Workshop",
-    titleBn: "প্রশিক্ষণ কর্মশালা",
+    title: "",
+    titleBn: "",
     image: "/images/2.jpeg",
   },
   {
-    title: "Training Workshop",
-    titleBn: "প্রশিক্ষণ কর্মশালা",
+    title: "",
+    titleBn: "",
     image: "/images/3.jpeg",
   },
 ];

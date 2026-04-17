@@ -12,12 +12,15 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <NewsTicker />
+      <section id="home">      
+        <NewsTicker />
+      </section> 
+
       <HeroSection />
       {/* <WelcomeSection /> */}
 
       {/* Notices & Events */}
-      <section className="py-16 bg-background">
+      <section id="notice-event" className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <NoticesPreview />
@@ -25,10 +28,16 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <StatsSection />
-      <GalleryPreview />
-      <Footer />
+      <section id="stats">
+         <StatsSection />
+      </section>
+      <section id='gallery'>
+         <GalleryPreview />
+      </section>
+     
+      <section id='contact'>
+        <Footer />
+      </section>
     </div>
   );
 };
