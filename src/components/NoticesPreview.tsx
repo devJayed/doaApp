@@ -20,7 +20,7 @@ const notices = [
     category: "Circular",
     categoryBn: "সার্কুলার",
     urgent: false,
-    pdf: "/files/3.pdf",
+    pdf: "/files/2.pdf",
   },
   {
     title: "Constitution of the DOA.",
@@ -30,7 +30,7 @@ const notices = [
     category: "File",
     categoryBn: "ফাইল",
     urgent: false,
-    pdf: "/files/4.pdf",
+    pdf: "/files/3.pdf",
   },
   {
     title: "Minutes of the meeting of DOA",
@@ -40,27 +40,7 @@ const notices = [
     category: "Meeting",
     categoryBn: "সভা",
     urgent: false,
-    pdf: "/files/5.pdf",
-  },
-  {
-    title: "Additional Notice 1",
-    titleBn: "অতিরিক্ত নোটিশ ১",
-    date: "January 1, 2022",
-    dateBn: "১ জানুয়ারি ২০২২",
-    category: "Circular",
-    categoryBn: "সার্কুলার",
-    urgent: false,
-    pdf: "/files/6.pdf",
-  },
-  {
-    title: "Additional Notice 2",
-    titleBn: "অতিরিক্ত নোটিশ ২",
-    date: "January 5, 2022",
-    dateBn: "৫ জানুয়ারি ২০২২",
-    category: "Circular",
-    categoryBn: "সার্কুলার",
-    urgent: false,
-    pdf: "/files/7.pdf",
+    pdf: "/files/4.pdf",
   },
 ];
 
