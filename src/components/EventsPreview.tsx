@@ -2,11 +2,11 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Calendar, MapPin } from "lucide-react";
 
 const events = [
-  { title: "Meeting to form an ad hoc committee of DOA.", titleBn: "ডিওএ-এর অ্যাড হক কমিটি গঠন সংক্রান্ত সভা", date: "April 4, 2026", dateBn: "৪ এপ্রিল, ২০২৬",  location: "ZOOM", locationBn: "জুম ", color: "gradient-primary", status: "Open", statusBn: "খোলা" },
+  { title: "Meeting to form an ad hoc committee of DOA.", titleBn: "ডিওএ-এর অ্যাড হক কমিটি গঠন সংক্রান্ত সভা", month: "APRIL", day: "4",  location: "ZOOM", locationBn: "জুম ", color: "gradient-primary", status: "Open", statusBn: "খোলা" },
 
-  { title: "Meeting with DOA EC", titleBn: "ডিওএ নির্বাহী কমিটির সাথে সভা", date: "April 8, 2026", dateBn: "৮ এপ্রিল, ২০২৬", location: "Zilla ICT Office, Dhaka", locationBn: "জেলা আইসিটি অফিস, ঢাকা", color: "gradient-accent", status: "Open", statusBn: "খোলা" },
+  { title: "Meeting with DOA EC", titleBn: "ডিওএ নির্বাহী কমিটির সাথে সভা", month: "APRIL", day: "8", location: "Zilla ICT Office, Dhaka", locationBn: "জেলা আইসিটি অফিস, ঢাকা", color: "gradient-accent", status: "Open", statusBn: "খোলা" },
 
-  { title: "EC visit DOA Office", titleBn: "ডিওএ অফিসে নির্বাহী কমিটির পরিদর্শন", date: "April 13, 2026", dateBn: "১৩ এপ্রিল, ২০২৬", location: "Mohammodpur, Dhaka", locationBn: "মোহাম্মাদপুর, ঢাকা", attendees: 200, color: "gradient-gold", status: "Coming Soon", statusBn: "শীঘ্রই আসছে" },
+  { title: "EC visit DOA Office", titleBn: "ডিওএ অফিসে নির্বাহী কমিটির পরিদর্শন", month: "APRIL", day: "13", location: "Mohammodpur, Dhaka", locationBn: "মোহাম্মাদপুর, ঢাকা", attendees: 200, color: "gradient-gold", status: "Coming Soon", statusBn: "শীঘ্রই আসছে" },
 ];
 
 const EventsPreview = () => {
