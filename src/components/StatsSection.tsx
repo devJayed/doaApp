@@ -45,9 +45,9 @@ const StatsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground">
-            {t("Our Growing Community", "আমাদের বর্ধনশীল সম্প্রদায়")}
+            {t("Our Growing Community", "আমাদের ক্রমবর্ধমান কমিউনিটি")}
           </h2>
-          <p className="text-primary-foreground/70 mt-2">{t("Numbers that speak for our impact", "সংখ্যা যা আমাদের প্রভাবের কথা বলে")}</p>
+          <p className="text-primary-foreground/70 mt-2">{t("Numbers that speak for our impact", "সংখ্যাগুলোই আমাদের অবদানের কথা বলে")}</p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, i) => (
