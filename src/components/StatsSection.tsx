@@ -4,13 +4,42 @@ import { Building, Calendar, FileText, Users } from "lucide-react";
 const StatsSection = () => {
   const { t } = useLanguage();
 
-  const stats = [
-    { icon: Users, value: "480+", label: t("Active Members", "সক্রিয় সদস্য"), color: "gradient-primary" },
-    { icon: Calendar, value: "2+", label: t("Events Organized", "আয়োজিত ইভেন্ট"), color: "gradient-accent" },
-    { icon: FileText, value: "4+", label: t("Notices Published", "প্রকাশিত নোটিশ"), color: "gradient-gold" },
-    { icon: Building, value: "550+", label: t("Departments", "বিভাগ"), color: "gradient-primary" },
-  ];
+  // const stats = [
+  //   { icon: Users, value: "480+", label: t("Active Members", "সক্রিয় সদস্য"), color: "gradient-primary" },
+  //   { icon: Calendar, value: "2+", label: t("Events Organized", "আয়োজিত ইভেন্ট"), color: "gradient-accent" },
+  //   { icon: FileText, value: "4+", label: t("Notices Published", "প্রকাশিত নোটিশ"), color: "gradient-gold" },
+  //   { icon: Building, value: "550+", label: t("Departments", "বিভাগ"), color: "gradient-primary" },
+  // ];
 
+  const stats = [
+  { 
+    icon: Users, 
+    value: t("480+", "৪৮০+"), 
+    label: t("Active Members", "সক্রিয় সদস্য"), 
+    color: "gradient-primary" 
+  },
+
+  { 
+    icon: Calendar, 
+    value: t("2+", "২+"), 
+    label: t("Events Organized", "আয়োজিত ইভেন্ট"), 
+    color: "gradient-accent" 
+  },
+
+  { 
+    icon: FileText, 
+    value: t("4+", "৪+"), 
+    label: t("Notices Published", "প্রকাশিত নোটিশ"), 
+    color: "gradient-gold" 
+  },
+
+  { 
+    icon: Building, 
+    value: t("550+", "৫৫০+"), 
+    label: t("Departments", "বিভাগ"), 
+    color: "gradient-primary" 
+  },
+];
   return (
     <section className="py-16 gradient-hero" aria-label={t("Statistics", "পরিসংখ্যান")}>
       <div className="container mx-auto px-4">

@@ -24,7 +24,7 @@ const HeroSection = () => {
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-4">
             {t("Department of ICT", "আইসিটি অধিদপ্তর")}<br />
-            <span className="text-secondary">{t("Officers Association", "অফিসার্স এসোসিয়েশন (ডিওএ)")}</span>
+            <span className="text-secondary">{t("Officers Association", "অফিসার্স এসোসিয়েশন")}</span>
           </h1>
 
           {/* <p className="font-bengali text-lg md:text-xl opacity-90 mb-2">
@@ -54,25 +54,45 @@ const HeroSection = () => {
 </Button> */}
           </div>
         </div>
-
         {/* Floating cards */}
-        <div className="hidden lg:flex absolute right-8 top-1/2 -translate-y-1/2 flex-col gap-4">
-          {[
-            { icon: Users, label: "480+", sub: t("Members", "সদস্য") },
-            { icon: Calendar, label: "2+", sub: t("Events", "ইভেন্ট") },
-            { icon: FileText, label: "4+", sub: t("Notices", "নোটিশ") },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-card/10 backdrop-blur-md border border-primary-foreground/20 rounded-xl px-5 py-4 animate-fade-in-up"
-              style={{ animationDelay: `${i * 0.2}s` }}
-            >
-              <item.icon className="h-6 w-6 text-secondary mb-1" aria-hidden="true" />
-              <p className="text-2xl font-bold">{item.label}</p>
-              <p className="text-xs opacity-70">{item.sub}</p>
-            </div>
-          ))}
-        </div>
+<div className="hidden lg:flex absolute right-8 top-1/2 -translate-y-1/2 flex-col gap-4">
+  {[
+    { 
+      icon: Users, 
+      label: t("480+", "৪৮০+"), 
+      sub: t("Members", "সদস্য") 
+    },
+    { 
+      icon: Calendar, 
+      label: t("2+", "২+"), 
+      sub: t("Events", "ইভেন্ট") 
+    },
+    { 
+      icon: FileText, 
+      label: t("4+", "৪+"), 
+      sub: t("Notices", "নোটিশ") 
+    },
+  ].map((item, i) => (
+    <div
+      key={i}
+      className="bg-card/10 backdrop-blur-md border border-primary-foreground/20 rounded-xl px-5 py-4 animate-fade-in-up"
+      style={{ animationDelay: `${i * 0.2}s` }}
+    >
+      <item.icon
+        className="h-6 w-6 text-secondary mb-1"
+        aria-hidden="true"
+      />
+
+      <p className="text-2xl font-bold">
+        {item.label}
+      </p>
+
+      <p className="text-xs opacity-70">
+        {item.sub}
+      </p>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );
