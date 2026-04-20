@@ -36,7 +36,7 @@ const StatsSection = () => {
   { 
     icon: Building, 
     value: t("550+", "৫৫০+"), 
-    label: t("Departments", "বিভাগ"), 
+    label: t("Offices", "কার্যালয়"), 
     color: "gradient-primary" 
   },
 ];

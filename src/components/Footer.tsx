@@ -1,18 +1,24 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Facebook, Mail, MapPin, Phone } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useLanguage();
 
   const quickLinks = [
-    { label: t("Home", "হোম"), path: "/" },
-    { label: t("Notices", "নোটিশ"), path: "/notices" },
-    { label: t("Events", "ইভেন্ট"), path: "/events" },
-    { label: t("Gallery", "গ্যালারি"), path: "/gallery" },
-    { label: t("About", "সম্পর্কে"), path: "/about" },
-    { label: t("Contact", "যোগাযোগ"), path: "/contact" },
+   { label: t("Home", "হোম"), id: "home" },
+    { label: t("Notices & Events", "নোটিশ ও ইভেন্ট"), id: "notice-event" },
+    { label: t("Community", "পরিসংখ্যান"), id: "stats" },
+    { label: t("Gallery", "গ্যালারি"), id: "gallery" },
+    { label: t("Contact", "যোগাযোগ"), id: "contact" },
   ];
+
+   // ✅ Scroll handler
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <footer className="gradient-hero text-primary-foreground" role="contentinfo">
@@ -38,15 +44,18 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="font-heading font-bold text-lg mb-4">{t("Quick Links", "দ্রুত লিংক")}</h4>
-            <ul className="space-y-2 text-sm opacity-80">
-              {quickLinks.map((item) => (
-                <li key={item.path}>
-                  <Link to={item.path} className="hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+           <ul className="space-y-2 text-sm opacity-80">
+  {quickLinks.map((item) => (
+    <li key={item.id}>
+      <button
+        onClick={() => handleScroll(item.id)}
+        className="hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
+      >
+        {item.label}
+      </button>
+    </li>
+  ))}
+</ul>
           </div>
 
           {/* Contact */}
