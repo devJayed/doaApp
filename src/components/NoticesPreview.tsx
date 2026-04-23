@@ -2,6 +2,16 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Clock, FileText, Tag } from "lucide-react";
 
 const notices = [
+   {
+    title: "Regarding the transfer of responsibilities of the DOA. (2nd Notice)",
+    titleBn: "ডিওএ-এর দায়িত্বভার হস্তান্তর সংক্রান্ত। (২য় নোটিশ)",
+    date: "April 22, 2026",
+    dateBn: "২২ এপ্রিল ২০২৬", 
+    category: "Circular",
+    categoryBn: "সার্কুলার",
+    urgent: true,
+    pdf: "/files/5.pdf",
+  },
   {
     title: "Regarding the transfer of responsibilities of the DOA.",
     titleBn: "ডিওএ-এর দায়িত্ব হস্তান্তর সংক্রান্ত",
